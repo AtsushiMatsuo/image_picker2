@@ -15,7 +15,7 @@ jobs:
       - name: Install Flutter
         run: git clone https://github.com/flutter/flutter.git
 
-  brew upgrade dart     - name: Add path
+      - name: Add path
         run: echo "$(pwd)/flutter/bin" >> $GITHUB_PATH
 
       - name: Download Flutter packages
